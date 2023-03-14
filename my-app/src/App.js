@@ -45,6 +45,8 @@ function App() {
       />
       <ul>{listItems}</ul>
       <MyButton />
+      <MyButton />
+      <MyButton />
     </div>
   );
 }
