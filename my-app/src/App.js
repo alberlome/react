@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
 
 const user = {
   name: "Hedy Lamarr",
@@ -18,10 +19,13 @@ const listItems = products.map((product) => {
 });
 
 function MyButton() {
+  const [count, setCount] = useState(0);
   function handleClick() {
-    alert("You clicked me! ");
+    setCount(count + 1);
   }
-  return <button onClick={handleClick}>My Button </button>;
+  return (
+    <button onClick={handleClick}>My Button clicked {count} times </button>
+  );
 }
 
 function App() {
