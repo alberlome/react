@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.title-app {
+  color: red;
+}
+
+.user-app {
+  color: green;
+}
+
+.img-app {
+  border-radius: 50%;
+}
