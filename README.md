@@ -1,6 +1,6 @@
 # React Tutorial
 
-First step in this react tutorial for learning this framework and in future explain to others developers.
+Tutorial de REACT para aprender sobre este framework y en el futuro poder enseñar a otros programadores.
 
 ## Instalación
 
