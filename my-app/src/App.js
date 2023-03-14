@@ -7,8 +7,21 @@ const user = {
   imageSize: 90,
 };
 
+const products = [
+  { title: "Cabbage", id: 1 },
+  { title: "Garlic", id: 2 },
+  { title: "Apple", id: 3 },
+];
+
+const listItems = products.map((product) => {
+  return <li key={product.id}>{product.title}</li>;
+});
+
 function MyButton() {
-  return <button>My Button </button>;
+  function handleClick() {
+    alert("You clicked me! ");
+  }
+  return <button onClick={handleClick}>My Button </button>;
 }
 
 function App() {
@@ -26,6 +39,7 @@ function App() {
           height: user.imageSize,
         }}
       />
+      <ul>{listItems}</ul>
       <MyButton />
     </div>
   );
