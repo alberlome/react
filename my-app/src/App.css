@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.title-app {
+  color: red;
+}
+
+.user-app {
+  color: green;
+}
+
+.img-app {
+  border-radius: 50%;
+}
