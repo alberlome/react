@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+
+function CardList() {
+  const cardList: Array<any> = [
+    {
+      id: 1,
+      name: "Formula One",
+      description: "This is the description for F1",
+      stars: 4,
+    },
+    {
+      id: 2,
+      name: "MotoGP",
+      description: "This is the description for MotoGP",
+      stars: 4,
+    },
+    {
+      id: 3,
+      name: "WRC",
+      description: "This is the description for Worl Rally Championship",
+      stars: 3,
+    },
+  ];
+
+  return (
+    <div>
+      {cardList.map((card) => (
+        <div key={card.id}> {card.name} </div>
+      ))}
+    </div>
+  );
+}
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <h1>Sports Stream Watch</h1>
+      <p>
+        The resume of sports are in streaming now most important in the world.
       </p>
+      <CardList />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
